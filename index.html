@@ -16,10 +16,11 @@
     <nav class="nav" id="nav">
         <div class="nav-container">
             <div class="logo">
-                <img src="https://www.figma.com/api/mcp/asset/7bb98aeb-e933-4706-9101-c90251c746af" alt="Airaide Logo">
+                <img src="assets/logo.svg" alt="Airaide Logo">
+                <!-- <img src="https://www.figma.com/api/mcp/asset/7bb98aeb-e933-4706-9101-c90251c746af" alt="Airaide Logo"> -->
             </div>
             <div class="menu" id="menu">
-                <a href="#service">Service</a>
+                <a href="services.html">Services</a>
                 <a href="#project">Projects</a>
                 <a href="#insight">Insight</a>
                 <a href="#training">Training</a>
@@ -28,7 +29,9 @@
             </div>
             <button class="btn-primary nav-btn">Get in Touch</button>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <img src="https://www.figma.com/api/mcp/asset/a55b85ab-7180-4c61-84aa-e83b2240104f" alt="Menu"
+                <!-- <img src="https://www.figma.com/api/mcp/asset/a55b85ab-7180-4c61-84aa-e83b2240104f" alt="Menu"
+                    class="hamburger-icon"> -->
+                    <img src="assets/menu.svg" alt="Menu"
                     class="hamburger-icon">
             </button>
         </div>
@@ -36,29 +39,59 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <!-- Status Bar -->
+        <!-- <div class="mobile-status-bar">
+            <div class="status-bar-content">
+                <div class="status-time">9:41</div>
+                <div class="status-spacer"></div>
+                <div class="status-icons">
+                    <img src="https://www.figma.com/api/mcp/asset/38bd3c84-bd6b-48f3-94ca-c5a1f700934f" alt="Status icons" class="status-levels">
+                </div>
+            </div>
+        </div> -->
+        <!-- Nav Bar -->
         <div class="mobile-menu-header">
-            <div class="logo">
-                <img src="https://www.figma.com/api/mcp/asset/7bb98aeb-e933-4706-9101-c90251c746af" alt="Airaide Logo">
+            <div class="mobile-menu-logo">
+                <img src="https://www.figma.com/api/mcp/asset/fd54821e-e64f-4649-8039-b0ec3370667d" alt="Airaide Logo">
             </div>
             <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
+                <img src="https://www.figma.com/api/mcp/asset/f7cef0da-3eef-4d2c-bd2c-4038d4fd9b88" alt="Close" class="close-icon">
             </button>
         </div>
+        <!-- Navigation Links -->
         <nav class="mobile-menu-nav">
-            <a href="#home" class="mobile-menu-link">Home</a>
-            <a href="#about" class="mobile-menu-link">About</a>
-            <a href="#services" class="mobile-menu-link">Services</a>
-            <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
-            <a href="#contact" class="mobile-menu-link contact-link">Contact Us</a>
+            <a href="services.html" class="mobile-menu-link">Services</a>
+            <a href="#project" class="mobile-menu-link">Projects</a>
+            <a href="#insight" class="mobile-menu-link">Insights</a>
+            <a href="#training" class="mobile-menu-link">Trainings</a>
+            <a href="#about" class="mobile-menu-link">About Us</a>
         </nav>
+        <!-- Get in Touch Button -->
+        <div class="mobile-menu-cta">
+            <button class="mobile-cta-button">Get in Touch</button>
+        </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background"></div>
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-blob hero-blob-1">
+                <div class="blob-inner">
+                    <img src="https://www.figma.com/api/mcp/asset/ebcb5627-8181-4999-95ab-8e3e8758feb6" alt="" class="blob-img blob-img-1">
+                    <img src="https://www.figma.com/api/mcp/asset/b6677dcb-d473-4f2f-b86d-d26b8bb605bc" alt="" class="blob-img blob-img-2">
+                    <img src="https://www.figma.com/api/mcp/asset/0303a010-21ec-49bb-9e7b-3ab9fcc2206d" alt="" class="blob-img blob-img-3">
+                </div>
+            </div>
+            <div class="hero-blob hero-blob-2">
+                <div class="blob-inner blob-2-inner">
+                    <img src="https://www.figma.com/api/mcp/asset/8748a5f9-a5fb-4aea-ab3f-814de28875ae" alt="" class="blob-img blob2-img-1">
+                    <img src="https://www.figma.com/api/mcp/asset/4a1cf033-11b0-40a2-a1fb-27c691d43ca7" alt="" class="blob-img blob2-img-2">
+                    <img src="https://www.figma.com/api/mcp/asset/44e7468d-e66a-4434-a364-b96fcbe47fdf" alt="" class="blob-img blob2-img-3">
+                </div>
+            </div>
+            <div class="hero-noise"></div>
+        </div>
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">Pioneering the Future of Technology</h1>
@@ -133,7 +166,7 @@
                     <p>Let's discuss how our solutions can help you achieve your innovation goals and stay ahead of the
                         competition.</p>
                     <div class="cta-buttons">
-                        <button class="btn-primary">Schedule a Discovery Call <img src="assets/blue-arrow-icon.png" alt="arrow-icon"></button>
+                        <button class="btn-primary">Schedule a Discovery Call <img src="https://www.figma.com/api/mcp/asset/9b89aa4e-7a22-4731-bb81-6314b43e506c" alt="arrow-icon"></button>
                         <button class="btn-outline">View Case Studies</button>
                     </div>
                 </div>
@@ -174,7 +207,7 @@
                             <p>Countries Served</p>
                         </div>
                     </div>
-                    <button class="btn-primary">Partner With Us <img src="assets/blue-arrow-icon.png" alt="arrow-icon"></button>
+                    <button class="btn-primary">Partner With Us <img src="https://www.figma.com/api/mcp/asset/9b89aa4e-7a22-4731-bb81-6314b43e506c" alt="arrow-icon"></button>
                 </div>
                 <div class="about-image">
                     <img src="assets/aboutImage.png"
@@ -202,7 +235,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/64a9adea-4d0a-41a4-a85a-c68df078475c"
+                        <img src="https://www.figma.com/api/mcp/asset/2bddd298-ad9c-4b01-9962-c8c52545c757"
                             alt="AI Icon">
                     </div>
                     <h5>Artificial Intelligence</h5>
@@ -212,7 +245,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/188eb93d-a018-498d-a6f5-4d44438dd583"
+                        <img src="https://www.figma.com/api/mcp/asset/568c5201-c329-40a5-bace-14226621dbdc"
                             alt="Robotics Icon">
                     </div>
                     <h5>Robotics</h5>
@@ -222,7 +255,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/e9f4d687-0e6a-47b9-98f3-26b225c21954"
+                        <img src="https://www.figma.com/api/mcp/asset/050e2d38-df1a-4fbc-a59e-6fdc7856851b"
                             alt="Additive Manufacturing Icon">
                     </div>
                     <h5>Additive Manufacturing</h5>
@@ -232,7 +265,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/c818be91-b305-4a83-aa48-beed82deecf6"
+                        <img src="https://www.figma.com/api/mcp/asset/d5800edf-039a-4515-bd23-d25769b9ecec"
                             alt="Cybersecurity Icon">
                     </div>
                     <h5>Cybersecurity</h5>
@@ -242,7 +275,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="assets/innovationIcon.svg"
+                        <img src="https://www.figma.com/api/mcp/asset/c3aae97b-78f9-4ec3-abe9-02634164eff8"
                             alt="Innovation Training Icon">
                     </div>
                     <h5>Innovation Training</h5>
@@ -253,7 +286,7 @@
             </div>
             <div class="services-cta">
                 <p>Not sure which service is right for you?</p>
-                <button class="btn-primary">Talk to Our Experts<img src="assets/blue-arrow-icon.png" alt="arrow-icon"></button>
+                <button class="btn-primary">Talk to Our Experts<img src="https://www.figma.com/api/mcp/asset/9b89aa4e-7a22-4731-bb81-6314b43e506c" alt="arrow-icon"></button>
             </div>
         </div>
     </section>
@@ -477,7 +510,7 @@
                     expert insights, case studies, and the latest in AI, robotics, and innovation.</p>
                 <div class="newsletter-form">
                     <div class="newsletter-input">
-                        <img src="assets/emailIcon.png"
+                        <img src="https://www.figma.com/api/mcp/asset/8267e4da-1bf3-4197-bc53-f8053426c202"
                             alt="Email icon">
                         <input type="email" placeholder="Enter your email address">
                     </div>
@@ -498,7 +531,7 @@
             <div class="footer-cta-grid">
                 <div class="footer-cta-card">
                     <div class="cta-icon purple">
-                        <img src="https://www.figma.com/api/mcp/asset/7955b7a7-a4bc-492b-824c-a8bbf2c9e5b9"
+                        <img src="https://www.figma.com/api/mcp/asset/8a2d9847-dc31-480f-9519-6f9e00956657"
                             alt="Consultation icon">
                     </div>
                     <h5>Book a Consultation</h5>
@@ -507,7 +540,7 @@
                 </div>
                 <div class="footer-cta-card">
                     <div class="cta-icon yellow">
-                        <img src="https://www.figma.com/api/mcp/asset/d037e7ef-3886-4920-91d2-94da5f97ff0f"
+                        <img src="https://www.figma.com/api/mcp/asset/a2229851-0283-46e5-b346-b00c8dd5f5d8"
                             alt="Demo icon">
                     </div>
                     <h5>Request a Demo</h5>
@@ -516,7 +549,7 @@
                 </div>
                 <div class="footer-cta-card">
                     <div class="cta-icon teal">
-                        <img src="assets/proposalIcon.png"
+                        <img src="https://www.figma.com/api/mcp/asset/2269b18b-8989-4061-8608-c216cd346a78"
                             alt="Proposal icon">
                     </div>
                     <h5>Get a Proposal</h5>
@@ -533,7 +566,7 @@
             <div class="contact-info-grid">
                 <div class="contact-item">
                     <div class="contact-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/dfaf13bf-b57b-4876-8b55-a7aebb202025"
+                        <img src="https://www.figma.com/api/mcp/asset/47d5c02b-1def-40bb-918e-f1f1ef2c4d18"
                             alt="Email icon">
                     </div>
                     <div class="contact-text">
@@ -543,7 +576,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/f34ecb4c-0116-4941-b74e-d9b9891eed49"
+                        <img src="https://www.figma.com/api/mcp/asset/2cd6c5d1-9a3e-42e8-b26f-65d616e215f7"
                             alt="Phone icon">
                     </div>
                     <div class="contact-text">
@@ -553,7 +586,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/570658dc-15d4-47dd-8eaf-684c2f28c0ee"
+                        <img src="https://www.figma.com/api/mcp/asset/dfacef4b-5ce4-49c6-954b-e819417c270f"
                             alt="Location icon">
                     </div>
                     <div class="contact-text">
@@ -563,7 +596,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">
-                        <img src="https://www.figma.com/api/mcp/asset/a78dbe73-9595-427b-91ab-43c41c783c0b"
+                        <img src="https://www.figma.com/api/mcp/asset/93738b47-7968-4c1b-904a-ec09ec66e368"
                             alt="Clock icon">
                     </div>
                     <div class="contact-text">

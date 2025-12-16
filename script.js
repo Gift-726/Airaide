@@ -36,6 +36,16 @@ mobileMenuLinks.forEach(link => {
     });
 });
 
+// Close menu when clicking on the CTA button
+const mobileCtaButton = document.querySelector('.mobile-cta-button');
+if (mobileCtaButton) {
+    mobileCtaButton.addEventListener('click', () => {
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+        // You can add navigation logic here if needed
+    });
+}
+
 // Close menu when resizing to desktop view
 window.addEventListener('resize', () => {
     if (!isMobileView() && mobileMenuOverlay.classList.contains('active')) {
@@ -68,14 +78,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// Navbar scroll effect
+// Navbar scroll effect - only for screens 769px and above
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
+    const isDesktop = window.innerWidth >= 769;
 
-    if (nav) {
-        if (currentScroll > 50) {
+    if (nav && isDesktop) {
+        // Don't add scrolled class on services page - it has its own background
+        const isServicesPage = nav.classList.contains('services-page');
+        
+        if (currentScroll > 50 && !isServicesPage) {
             nav.classList.add('scrolled');
-        } else {
+        } else if (!isServicesPage) {
+            nav.classList.remove('scrolled');
+        }
+    }
+});
+
+// Handle resize to update navbar state
+window.addEventListener('resize', () => {
+    const isDesktop = window.innerWidth >= 769;
+    if (nav) {
+        const isServicesPage = nav.classList.contains('services-page');
+        if (!isDesktop && !isServicesPage) {
             nav.classList.remove('scrolled');
         }
     }
@@ -129,6 +154,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         observer.observe(section);
+    });
+
+    // FAQ Accordion functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const faqHeader = item.querySelector('.faq-header');
+        if (faqHeader) {
+            faqHeader.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                // Close all FAQ items
+                faqItems.forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        }
     });
 });
 

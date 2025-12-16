@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Airaide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav services-page" id="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.figma.com/api/mcp/asset/7bb98aeb-e933-4706-9101-c90251c746af" alt="Airaide Logo">
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <a href="services.html" class="active">Services</a>
+                <a href="index.html#project">Projects</a>
+                <a href="index.html#insight">Insight</a>
+                <a href="index.html#training">Training</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#contact" class="contact-link">Contact Us</a>
+            </div>
+            <button class="btn-primary nav-btn">Get in Touch</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <img src="https://www.figma.com/api/mcp/asset/a55b85ab-7180-4c61-84aa-e83b2240104f" alt="Menu"
+                    class="hamburger-icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.figma.com/api/mcp/asset/7bb98aeb-e933-4706-9101-c90251c746af" alt="Airaide Logo">
+                </a>
+            </div>
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+            <a href="index.html#about" class="mobile-menu-link">About</a>
+            <a href="services.html" class="mobile-menu-link active">Services</a>
+            <a href="index.html#portfolio" class="mobile-menu-link">Portfolio</a>
+            <a href="index.html#contact" class="mobile-menu-link contact-link">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <div class="services-hero-badge">
+                    <img src="https://www.figma.com/api/mcp/asset/5ac73659-1dfd-4b40-bed6-7b6161fddea6" alt="Icon">
+                    <span>Comprehensive Technology Solutions</span>
+                </div>
+                <h1 class="services-hero-title">Transform Your Business</h1>
+                <p class="services-hero-description">Discover a wide range of advanced technology services designed to drive innovation and deliver measurable results for your organization.</p>
+                <div class="services-hero-buttons">
+                    <button class="btn-primary">Get Started <img src="assets/blue-arrow-icon.png" alt="arrow"></button>
+                    <button class="btn-outline">
+                        <img src="https://www.figma.com/api/mcp/asset/9f720709-74ad-4c82-9ef6-ee78b39b6c0e" alt="Icon">
+                        Schedule Consultation
+                    </button>
+                </div>
+            </div>
+            <div class="services-hero-image">
+                <img src="https://www.figma.com/api/mcp/asset/8d44d4f5-3a27-481f-90c7-f0850bc9cb1f" alt="Hero Image">
+                <img src="https://www.figma.com/api/mcp/asset/bd30f805-bc2a-4198-b74f-46f8640bff03" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="services-impact">
+        <div class="container">
+            <div class="services-impact-grid">
+                <div class="services-impact-item">
+                    <h3>500+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="services-impact-item">
+                    <h3>98%</h3>
+                    <p>Satisfaction</p>
+                </div>
+                <div class="services-impact-item">
+                    <h3>50+</h3>
+                    <p>Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="services-offer">
+        <div class="container">
+            <div class="section-header center">
+                <p class="section-label">What We Offer</p>
+                <h2 class="section-title">We offer a wide range of services to meet your needs</h2>
+                <p class="section-description">From intelligent AI solutions to comprehensive training programs, our services are designed to propel your business forward.</p>
+            </div>
+            <div class="services-offer-grid">
+                <!-- AI Service -->
+                <div class="service-card-offer">
+                    <div class="service-icon-offer">
+                        <img src="https://www.figma.com/api/mcp/asset/22c37606-4130-4f1c-b758-756653af1106" alt="AI Icon">
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Transform your business with intelligent systems that learn, adapt, and deliver actionable insights from complex data.</p>
+                    <ul class="service-features-list">
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Machine Learning & Predictive Analytics</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Natural Language Processing</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Computer Vision Solutions</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Computer Vision Solutions</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Robotics Service -->
+                <div class="service-card-offer">
+                    <div class="service-icon-offer">
+                        <img src="https://www.figma.com/api/mcp/asset/1cb94ba3-803e-410f-ae08-87ac86b2d22b" alt="Robotics Icon">
+                    </div>
+                    <h3>Robotics</h3>
+                    <p>Advanced robotic systems designed to optimize operations, improve precision, and drive efficiency across industries.</p>
+                    <ul class="service-features-list">
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Industrial Automation</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Collaborative Robots (Cobots)</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Autonomous Systems</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Custom Robotics Development</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Additive Manufacturing Service -->
+                <div class="service-card-offer">
+                    <div class="service-icon-offer">
+                        <img src="https://www.figma.com/api/mcp/asset/78c159b4-3a1e-4840-aac7-81d1f996749d" alt="3D Printing Icon">
+                    </div>
+                    <h3>Additive Manufacturing</h3>
+                    <p>Accelerate innovation with cutting-edge 3D printing technologies for rapid prototyping and custom manufacturing.</p>
+                    <ul class="service-features-list">
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Rapid Prototyping</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Custom Part Manufacturing</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Design Optimization</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Material Engineering</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cybersecurity Service -->
+                <div class="service-card-offer">
+                    <div class="service-icon-offer">
+                        <img src="https://www.figma.com/api/mcp/asset/00f0f18b-b5d5-4d4c-8b4a-cd43214792ea" alt="Security Icon">
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive security solutions to protect your digital assets and ensure business continuity in an evolving threat landscape.</p>
+                    <ul class="service-features-list">
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Security Assessment & Auditing</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Penetration Testing</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Incident Response</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Compliance Management</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Innovation & Research Service -->
+                <div class="service-card-offer">
+                    <div class="service-icon-offer">
+                        <img src="https://www.figma.com/api/mcp/asset/bfd8ca5b-007f-4db8-9a07-95ba4d4b44f7" alt="Innovation Icon">
+                    </div>
+                    <h3>Innovation & Research</h3>
+                    <p>Partner with our R&D team to explore emerging technologies and develop breakthrough solutions for tomorrow.</p>
+                    <ul class="service-features-list">
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Technology Research</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Innovation Workshops</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Proof of Concept Development</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Design Thinking Sessions</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Innovation Training Service -->
+                <div class="service-card-offer">
+                    <div class="service-icon-offer">
+                        <img src="https://www.figma.com/api/mcp/asset/9752c725-1d92-4c03-857a-5b39f0527e05" alt="Training Icon">
+                    </div>
+                    <h3>Innovation Training</h3>
+                    <p>Empower your team with hands-on training programs in AI, robotics, and emerging technologies.</p>
+                    <ul class="service-features-list">
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Custom Training Programs</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Technical Certifications</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Hands-on Workshops</span>
+                        </li>
+                        <li>
+                            <img src="https://www.figma.com/api/mcp/asset/aac42e4e-e26a-403f-b233-b7dfeb0272b9" alt="Check">
+                            <span>Corporate Training</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose AIRAIDE Section -->
+    <section class="services-why-choose">
+        <div class="container">
+            <div class="services-why-choose-content">
+                <div class="services-why-choose-image">
+                    <!-- <img src="https://www.figma.com/api/mcp/asset/abee5424-f31c-45a8-9639-ffa0a8a8197c" alt="AIRAIDE Services">
+                    <img src="https://www.figma.com/api/mcp/asset/d2240eb8-3667-45ac-a1b5-ee2d436e7b54" alt="AIRAIDE Services"> -->
+                    <img src="https://www.figma.com/api/mcp/asset/91b3a85e-c86d-49dd-9385-f9b44c5d015d" alt="AIRAIDE Services">
+                </div>
+                <div class="services-why-choose-text">
+                    <p class="section-label">Why Choose AIRAIDE</p>
+                    <h2 class="section-title white">The services aim to enhance your health.</h2>
+                    <p class="services-why-choose-description">With over 500 successful projects across diverse industries, we bring unmatched expertise in AI, robotics, and emerging technologies. Our team combines deep technical knowledge with local market understanding to deliver solutions that work.</p>
+                    <div class="services-why-choose-features">
+                        <div class="why-choose-feature">
+                            <div class="why-choose-feature-icon">
+                                <img src="https://www.figma.com/api/mcp/asset/0612d11f-7103-4424-b15c-f24b66e9afa2" alt="Icon">
+                            </div>
+                            <div class="why-choose-feature-text">
+                                <h6>Expert Team</h6>
+                                <p>Highly skilled professionals with years of industry experience</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-feature">
+                            <div class="why-choose-feature-icon">
+                                <img src="https://www.figma.com/api/mcp/asset/0612d11f-7103-4424-b15c-f24b66e9afa2" alt="Icon">
+                            </div>
+                            <div class="why-choose-feature-text">
+                                <h6>Proven Results</h6>
+                                <p>98% client satisfaction with measurable business impact</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-feature">
+                            <div class="why-choose-feature-icon">
+                                <img src="https://www.figma.com/api/mcp/asset/0612d11f-7103-4424-b15c-f24b66e9afa2" alt="Icon">
+                            </div>
+                            <div class="why-choose-feature-text">
+                                <h6>Continuous Support</h6>
+                                <p>Ongoing assistance to ensure long-term success</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Start Your Project <img src="assets/blue-arrow-icon.png" alt="arrow"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section class="services-process">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">How does the service process work?</h2>
+                <p class="section-description">Our streamlined approach ensures efficient delivery and exceptional results</p>
+            </div>
+            <div class="services-process-steps">
+                <div class="process-step-card">
+                    <div class="process-step-number">1</div>
+                    <h4>Initial Assessment</h4>
+                    <p>We begin with a comprehensive evaluation of your current systems, challenges, and goals to identify opportunities.</p>
+                </div>
+                <div class="process-step-card">
+                    <div class="process-step-number">2</div>
+                    <h4>Custom Strategy</h4>
+                    <p>Our experts develop a tailored roadmap that aligns cutting-edge technology with your business objectives.</p>
+                </div>
+                <div class="process-step-card">
+                    <div class="process-step-number">3</div>
+                    <h4>Implementation</h4>
+                    <p>We execute with precision using agile methodologies, ensuring seamless integration with your existing systems.</p>
+                </div>
+                <div class="process-step-card">
+                    <div class="process-step-number">4</div>
+                    <h4>Ongoing Support</h4>
+                    <p>Continuous monitoring, optimization, and training ensure your solutions deliver lasting value and adapt to change.</p>
+                </div>
+            </div>
+            <div class="services-process-cta">
+                <button class="btn-primary">Get Started Today <img src="assets/blue-arrow-icon.png" alt="arrow"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="services-faq">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Frequently asked questions</h2>
+                <p class="section-description">Find answers to common questions about our services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h5>How do I choose the right service for my business?</h5>
+                        <button class="faq-toggle">
+                            <img src="https://www.figma.com/api/mcp/asset/b280c642-f3fb-482e-b2be-8dcf7afe6a78" alt="Toggle">
+                        </button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Our team will work with you to understand your specific challenges and goals. We offer free consultation sessions where we assess your needs and recommend the most appropriate services. Many clients benefit from a combination of our offerings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h5>What industries do you serve?</h5>
+                        <button class="faq-toggle">
+                            <img src="https://www.figma.com/api/mcp/asset/fe035c40-c1ec-43e0-8e7c-3aa3ec49a3a0" alt="Toggle">
+                        </button>
+                    </div>
+                    <div class="faq-content">
+                        <p>We work across diverse industries including manufacturing, healthcare, education, agriculture, finance, and government. Our solutions are tailored to meet sector-specific requirements and regulations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h5>How long does a typical project take?</h5>
+                        <button class="faq-toggle">
+                            <img src="https://www.figma.com/api/mcp/asset/fe035c40-c1ec-43e0-8e7c-3aa3ec49a3a0" alt="Toggle">
+                        </button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Project timelines vary based on scope and complexity. A proof of concept might take 4-6 weeks, while full-scale implementations can range from 3-12 months. We provide detailed timelines during the planning phase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h5>Do you provide training for our team?</h5>
+                        <button class="faq-toggle">
+                            <img src="https://www.figma.com/api/mcp/asset/fe035c40-c1ec-43e0-8e7c-3aa3ec49a3a0" alt="Toggle">
+                        </button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Absolutely! Knowledge transfer is a key part of our process. We offer comprehensive training programs, documentation, and ongoing support to ensure your team can effectively use and maintain the solutions we implement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h5>What is your approach to cybersecurity?</h5>
+                        <button class="faq-toggle">
+                            <img src="https://www.figma.com/api/mcp/asset/fe035c40-c1ec-43e0-8e7c-3aa3ec49a3a0" alt="Toggle">
+                        </button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Security is integrated into every solution we build. We follow industry best practices, conduct regular security audits, ensure compliance with relevant standards, and provide ongoing monitoring and updates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA Section -->
+    <section class="services-footer-cta">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Ready to Build the Future?</h2>
+                <p class="section-description">Let's transform your vision into reality with cutting-edge technology solutions.</p>
+                        </div>
+            <div class="footer-cta-grid">
+                <div class="footer-cta-card">
+                    <div class="footer-cta-icon purple">
+                        <img src="https://www.figma.com/api/mcp/asset/1bf1b063-baef-4cc7-85e9-53555ba10ad4" alt="Icon">
+                        </div>
+                    <h5>Book a Consultation</h5>
+                    <p>Schedule a free 30-minute consultation with our experts.</p>
+                    <button class="btn-link purple">Schedule Now <img src="https://www.figma.com/api/mcp/asset/93655373-fdff-4b57-83f3-248334754591" alt="arrow"></button>
+                        </div>
+                <div class="footer-cta-card">
+                    <div class="footer-cta-icon yellow">
+                        <img src="https://www.figma.com/api/mcp/asset/e36070f9-e4a1-4685-a596-d825a8c852f3" alt="Icon">
+                    </div>
+                    <h5>Request a Demo</h5>
+                    <p>See our solutions in action with a personalized demo.</p>
+                    <button class="btn-link yellow">Get Demo <img src="https://www.figma.com/api/mcp/asset/a524e68b-d99d-40a0-b124-0630cea32f7c" alt="arrow"></button>
+                </div>
+                <div class="footer-cta-card">
+                    <div class="footer-cta-icon teal">
+                        <img src="https://www.figma.com/api/mcp/asset/e8fe7e11-25ed-4444-a122-2598bbd16363" alt="Icon">
+                    </div>
+                    <h5>Get a Proposal</h5>
+                    <p>Receive a detailed proposal tailored to your needs.</p>
+                    <button class="btn-link teal">Request Proposal <img src="https://www.figma.com/api/mcp/asset/13d352e8-c6a3-4d07-ae48-5ba7fffbfad0" alt="arrow"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/893d574c-a892-4ad9-a38c-df469b138c55" alt="Email icon">
+                    </div>
+                    <div class="contact-text">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">info@airaide.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/ab902eb9-603e-4769-9952-ebdf208863d3" alt="Phone icon">
+                    </div>
+                    <div class="contact-text">
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">(+234) 803 601 4972</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/97c16a96-cbcd-40df-9a44-4925d46673a1" alt="Location icon">
+                    </div>
+                    <div class="contact-text">
+                        <p class="contact-label">Headquarters</p>
+                        <p class="contact-value">29, Aderemi Adeleye Street GRA, Ilorin, Kwara State, Nigeria.</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/d4ea8ccb-8868-442a-99f1-299abf043027" alt="Clock icon">
+                    </div>
+                    <div class="contact-text">
+                        <p class="contact-label">Business Hours</p>
+                        <p class="contact-value">Mon-Fri, 7AM - 5PM WAT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://www.figma.com/api/mcp/asset/4874dff5-7bf3-4fa0-92e0-2b885f656f1d" alt="Airaide Logo">
+                    </div>
+                    <p class="footer-description">Pioneering the future of technology with innovative solutions in AI,
+                        Robotics, Additive Manufacturing, Cybersecurity, and Training.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Social media"><img
+                                src="https://www.figma.com/api/mcp/asset/56539505-910c-43d0-9b81-dda9714e4d84"
+                                alt="Social"></a>
+                        <a href="#" aria-label="Social media"><img
+                                src="https://www.figma.com/api/mcp/asset/ceefb9ff-5f0c-42a7-8950-685a0294c86b"
+                                alt="Social"></a>
+                        <a href="#" aria-label="Social media"><img
+                                src="https://www.figma.com/api/mcp/asset/284e7d5b-8472-4d00-818e-328d33c22cc4"
+                                alt="Social"></a>
+                        <a href="#" aria-label="Social media"><img
+                                src="https://www.figma.com/api/mcp/asset/cf6eb3c8-eac5-4229-8288-3f8351336c31"
+                                alt="Social"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h6>Services</h6>
+                        <ul>
+                            <li><a href="services.html">Artificial Intelligence</a></li>
+                            <li><a href="services.html">Robotics</a></li>
+                            <li><a href="services.html">Cybersecurity</a></li>
+                            <li><a href="services.html">Additive Manufacturing</a></li>
+                            <li><a href="services.html">View All Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#project">Projects</a></li>
+                            <li><a href="index.html#insight">Insights</a></li>
+                            <li><a href="index.html#training">Trainings</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h6>Resources</h6>
+                        <ul>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Training Programs</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h6>Legal</h6>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                <p>© 2025 AiRaide - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
